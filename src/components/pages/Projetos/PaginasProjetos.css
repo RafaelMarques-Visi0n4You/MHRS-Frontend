@@ -1,0 +1,371 @@
+/*-------------------------------Página Programa de Ideias-------------------------------*/
+.ideias {
+    display: flex;
+    align-items: center;
+    margin: 70px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ideias h1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.filtro-ideias {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.ideias .icone-plus {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.tabela-ideias {
+    margin: 70px;
+    margin-top: 50px;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+}
+
+#btn-eliminar {
+    background-color: #ad3434 !important;
+    border: 1px solid #ad3434 !important;
+    color: white;
+}
+
+#btn-editar {
+    background-color: #343233 !important;
+    border: 1px solid #343233 !important;
+    color: white;
+}
+
+.Input-titulo-ideia,
+.Input-descricao-ideia,
+.Input-ficheiro-complementar {
+    margin-bottom: 10px;
+}
+
+.btn-submit-ideia {
+    background-color: #343233 !important;
+    color: white !important;
+}
+
+
+.ideias-modal .btn-cancel, .editar-ideia-modal .btn-cancel, .rejeitar-ideia-modal .btn-cancel, .modal-reformular-ideia .btn-cancel, .modal-ideia-aprovada .btn-cancel {
+    background-color: white !important;
+    color: #343233 !important;
+    border: 1px solid #343233 !important;
+}
+
+.ideias-modal .btn-ok {
+    background-color: #343233 !important;
+    color: white !important;
+    border: 1px solid #343233 !important;
+}
+
+.ideias-modal .btn-submit-rejeitar, .rejeitar-ideia-modal .btn-submit-rejeitar {
+    background-color: #ad3434 !important;
+    color: white !important;
+    border: 1px solid #ad3434 !important;
+}
+
+.ideias-modal .btn-submit-aprovar, .modal-ideia-aprovada .btn-submit-aprovar {
+    background-color: #6b885d !important;
+    color: white !important;
+    border: 1px solid #6b885d !important;
+}
+
+.ideias-modal .btn-editar-ideia, .editar-ideia-modal .btn-editar-ideia, .ideias-modal .btn-reformular-ideia, .ideias-modal .btn-ok, .modal-reformular-ideia .btn-reformular-ideia {
+    background-color: #343233 !important;
+    color: white !important;
+    border: 1px solid #343233 !important;
+}
+
+.ideias-modal .btn-cancel,
+.ideias-modal .btn-submit-rejeitar,
+.ideias-modal .btn-submit-aprovar,
+.ideias-modal .btn-editar-ideia {
+    margin-right: 10px;
+}
+
+/*-------------------------------Páginas Projetos -------------------------------*/
+.projetos {
+    display: flex;
+    align-items: center;
+    margin: 70px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.projetos h1 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.projetos .icone-plus {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.projetos-lista {
+    width: 100%;
+    padding: 50px 5vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+
+.projetos-lista .projetos-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projetos-card .btn-detalhes {
+    background: #343233;
+    color: white;
+    border: none;
+    outline: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/*-------------------------------Página Projeto Individual-------------------------------*/
+.projeto-individual {
+    display: grid;
+    grid-template-columns: 0.45fr 1.5fr 0.85fr;
+    margin: 70px;
+    gap: 20px;
+    column-gap: 150px;
+}
+
+.projeto-individual h1 {
+    grid-column: span 2;
+    color: #343233;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.projeto-individual .info {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.projeto-individual .info h2,
+.projeto-individual .objetivos h2 {
+    color: #343233;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+
+.projeto-individual .breves-info {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.projeto-individual .objetivos{
+    grid-column: 3;
+    grid-row: 2;
+}
+.projeto-individual .breves-info h5 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 2;
+}
+
+.projeto-individual .breves-info h6 {
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 25px;
+}
+
+.projeto-individual .breves-info h6 .btn-desenvolvedor {
+    background-color: #343233 !important;
+    color: white !important;
+    border: none;
+
+}
+.projeto-individual .comentarios-projeto {
+    grid-column: span 3;
+    grid-row: 3;
+    background-color: rgb(235, 231, 231);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px;
+}
+
+.projeto-individual .comentarios-projeto .comentarios {
+    margin-top: 20px;
+    display: inline-flex;
+    margin-left: 40px;
+    width: 80%;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.comentarios-projeto .btn-comentario {
+    background-color: #343233 !important;
+    color: white !important;
+    align-items: end;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.comentarios-projeto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comentarios-projeto ul li {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.projeto-individual .comentarios-projeto h5 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+
+.info .adicionar-objetivos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 231, 231);
+    color: black;
+}
+
+.info .adicionar-objetivos:hover {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(212, 210, 210);
+    color: black;
+}
+
+
+.lista-objetivos {
+    list-style-type: none;
+    gap: 10px;
+    padding: 0;
+}
+
+
+.lista-objetivos li {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.lista-objetivos li .ant-checkbox-wrapper {
+    margin-right: 10px;
+}
+
+.lista-objetivos li:hover {
+    background: #e9ecef;
+}
+
+
+.timeline .ant-timeline-item-head {
+    background-color: rgb(235, 231, 231);
+    border: 2px solid #343233;
+}
+
+
+.timeline-item {
+    font-size: 25px;
+    padding: 10px;
+    color: #343233;
+}
+
+.timeline-item-content {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgb(235, 231, 231);
+
+}
+
+.adicionar-objetivos  {
+    background-color: #343233 !important;
+    color: white !important;
+    border: 1px solid #343233 !important;
+    gap: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-cancel{
+    background-color: white !important;
+    color: #343233 !important;
+    border: 1px solid #343233 !important;
+}
+
+.breves-info .concluir-btn{
+    background-color: #343233 !important;
+    color: white !important;
+    border: 1px solid #343233 !important;
+    margin-top: 20px;
+}
+
+.breves-info .concluir-btn:hover{
+    color:#343233 !important;
+    background-color: white !important;
+    border: 1px solid #343233 !important;
+
+}
+
+.btn-submit-projeto {
+    background-color: #343233 !important;
+    color: white !important;
+    border: 1px solid #343233 !important;
+}
+
+
+/*-----------------PAGINA ARQUIVO DE IDEIAS-----------------*/
+.btn-Ideia {
+    color: white !important;
+    background-color: #343233 !important;
+    border: none;
+}

@@ -1,0 +1,126 @@
+.background {
+    background: linear-gradient(135deg, #6b885d, #d69827, #7a4e80, #415676);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-login-registo{
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.container-iniciar-sessao {
+    width: 659px;
+    height: 823px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 80px;
+    box-shadow: 0px 4px 4px 5px black;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inicio-sessao {
+    font-size: 45px;
+    font-family: 'Judson';
+    margin-top: 35px;
+    margin-bottom: 40px;  
+    font-weight: bold;
+}
+
+.recuperar-pass {
+    font-family: 'Judson';
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    margin-left: 365px;
+}
+
+form{
+    flex-direction: column;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.input-inicio-sessao{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: 60px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    border: 1px solid rgb(181, 147, 147);
+    font-family: 'Judson';
+    font-weight:bold;
+    padding-left: 50px;
+}
+
+.icon{
+    position : absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    color: rgb(128, 128, 128);
+    font-size: 1.6em;
+}
+
+.container-input{
+    width: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-entrar{
+    font-family: 'Judson';
+    font-size: 25px;
+    border-radius: 20px;
+    align-items: center; 
+    justify-content: center;
+    background-color: black;
+    display: flex;
+    height: 45px;
+    width: 160px;
+    color:white;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+
+.btn-entrar:hover{
+    background-color: white;
+    color:black;
+    outline:  2px solid black;
+    border-radius: 20px;
+    display: flex;
+    height: 45px;
+    width: 160px;
+    align-items: center; 
+    justify-content: center;
+}
+
+.conta-nova{
+    font-size: 25px;
+    font-family: 'Judson';
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

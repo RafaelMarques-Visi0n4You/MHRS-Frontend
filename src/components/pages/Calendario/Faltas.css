@@ -1,0 +1,167 @@
+/*PÁGINA FALTAS COLABORADOR*/
+.container-faltas {
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr 1.5fr;
+    margin: 70px;
+    gap: 20px;
+    column-gap: 50px;
+}
+
+.btn-faltas {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white !important;
+    background-color: #343233 !important;
+    border: none;
+}
+
+.container-faltas .tabela-faltas{
+    grid-column: span 2;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container-faltas .titulo-faltas {
+    grid-column: span 3;
+    color: #343233;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.container-faltas .calendario {
+    grid-column: 3;
+    grid-row: span 3;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.container-faltas .faltas-justificadas {
+    align-items: center;
+    justify-content: center;
+    display: flex-start;
+    position: relative;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 2px #343233;
+    color: #343233;
+    padding: 20px;
+    margin: 20px;
+}
+
+.container-faltas .faltas-justificadas h2, .container-faltas .faltas-injustificadas h2{
+    color: #343233;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container-faltas .faltas-injustificadas h1, .container-faltas .faltas-justificadas h1{
+    color: #343233;
+    font-weight: 800;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container-faltas .faltas-injustificadas {
+    align-items: center;
+    justify-content: center;
+    display: flex-start;
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 2px #343233;
+    color: #343233;
+    padding: 20px;
+    margin: 20px;
+}
+
+.falta-modal .btn-cancel, .rejeitar-falta-modal .btn-cancel{
+    color: #343233 !important;
+    background-color: white !important;
+    border: 1px solid #343233 !important;
+}
+
+.falta-modal .btn-submit-rejeitar, .rejeitar-falta-modal .btn-submit-rejeitar{
+    color: white !important;
+    background-color: #ad3434 !important;
+    border: 1px solid #ad3434 !important;
+}
+
+
+.falta-modal .btn-eliminar{
+    color: #ad3434 !important;
+    background-color: white !important;
+    border: 1px solid #ad3434 !important;
+}
+
+.falta-modal .btn-submit-aprovar{
+    color: white !important;
+    background-color: #6b885d !important;
+    border: 1px solid #6b885d !important;
+}
+
+.falta-modal .btn-ok{
+    color: white !important;
+    background-color: #343233  !important;
+    border: 1px solid #343233 !important;
+}
+
+.btn-submit-justificar{
+    color: white !important;
+    background-color: #343233 !important;
+    border: 1px solid #343233 !important;
+    
+}
+
+/*CALENDARIO */
+.ant-picker-calendar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ant-picker-calendar .ant-picker-content {
+    flex-grow: 1; 
+}
+
+.ant-picker-calendar .ant-picker-cell {
+    padding: 15px; 
+}
+
+.ant-picker-calendar .ant-picker-cell-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+    background-color: #343233 !important;
+    color: white !important;
+    border: 1px solid #343233 !important;
+    border-radius: 12px;
+}
+
+.ant-picker-cell-today .ant-picker-cell-inner {
+    border: 1px solid #343233 !important;
+    border-radius: 12px;
+}

@@ -1,0 +1,73 @@
+/*----------------------Página de Despesas----------------------*/
+
+.despesas {
+    display: flex;
+    align-items: center;
+    margin: 70px;
+    justify-content: space-between;
+}
+
+.despesas .icone-plus {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.despesas h1 {
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.Input-despesa,
+.Input-valor,
+.Input-data-despesa,
+.Input-projeto {
+    margin-bottom: 10px;
+}
+
+.modal-despesa .btn-despesa {
+    background-color: #343233 !important;
+    color: white !important;
+    border: 1px solid #343233 !important;
+    gap: 10px;
+}
+
+.modal-despesa .btn-rejeitar, .modal-rejeitar .btn-rejeitar {
+    background-color: #ad3434 !important;
+    color: white !important;
+    border: 1px solid #ad3434 !important;
+}
+
+.modal-despesa .btn-aprovar {
+    background-color: #6b885d !important;
+    color: white !important;
+    border: 1px solid #6b885d !important;
+}
+
+.modal-despesa .btn-cancel, .modal-rejeitar .btn-cancel, .modal-editar .btn-cancel {
+    background-color: white;
+    border: 1px solid #343233 !important;
+    color: #343233 !important;
+}
+
+.modal-despesa .btn-eliminar {
+    background-color: white !important;
+    border: 1px solid #ad3434 !important;
+    color: #ad3434 !important;
+}
+
+.modal-despesa .btn-editar, .modal-editar .btn-editar, .modal-despesa .btn-ok {
+    background-color: #343233 !important;
+    border: 1px solid #343233 !important;
+    color: white !important;
+}
+
+.btn-reembolso {
+    background-color: #343233 !important;
+    border: 1px solid #343233 !important;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

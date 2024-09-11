@@ -1,0 +1,102 @@
+.titulo {
+  font-family: 'Moul';
+  font-size: 150px;
+  margin-bottom: 0;
+  font-weight: bold;
+  margin-top: 40%;
+  text-align: left;
+  color: black;
+}
+
+.SubTitulo {
+  font-family: 'Judson';
+  font-style: italic;
+  font-size: 44px;
+  margin-top: auto;
+  text-align: left;
+  color: black;
+}
+
+ .palavra-quadrado1 {
+  margin-top: 190px;
+  margin-bottom: 0px;
+  margin-left: -15px;
+}
+
+.palavra-quadrado2 {
+  margin-top: -45px;
+  margin-bottom: 0px;
+}
+
+.palavra-quadrado3 {
+  margin-top: 190px;
+  margin-bottom: 0px;
+  margin-left: -15px;
+}
+
+ .Palavra1 {
+  font-family: 'Moul';
+  font-weight: bold;
+  font-size: 32px;
+  margin-left: 500px;
+  margin-bottom: auto;
+}
+
+ .Palavra2 {
+  font-family: 'Moul';
+  font-weight: bold;
+  font-size: 32px;
+  margin-left: 70px;
+  margin-bottom: auto;
+  margin-top: auto;
+
+}
+
+ .Palavra3 {
+  font-family: 'Moul';
+  font-weight: bold;
+  font-size: 32px;
+  margin-left: 430px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.quadrado1 {
+  background: linear-gradient(135deg, #D69827, #705014);
+  width: 360px;
+  height: 237px;
+  margin-top: auto;
+  margin-bottom: -41px;
+  margin-left: 0px;
+  filter: blur(5px);
+  left:0;
+  position: absolute;
+}
+
+.palavra-quadrado1 .quadrado2 {
+  background: linear-gradient(135deg, #366221, #6B885D);
+  width: 360px;
+  height: 237px;
+  margin-top: auto;
+  margin-left: 360px;
+  filter: blur(5px);
+}
+
+.palavra-quadrado2 .quadrado3 {
+  background: linear-gradient(135deg, #7A4E80, #482E4B);
+  width: 360px;
+  height: 237px;
+  margin-top: auto;
+  filter: blur(5px);
+  left:0;
+  position: absolute;
+}
+
+.palavra-quadrado3 .quadrado4 {
+  background: linear-gradient(135deg, #79A0DC, #415676);
+  width: 360px;
+  height: 237px;
+  margin-top: auto;
+  margin-left: 360px;
+  filter: blur(5px);
+}

@@ -1,0 +1,241 @@
+/*-----------------PAGINA PRINCIPAL DAS VAGAS-----------------*/
+.vagas {
+    align-items: center;
+    margin: 50px;
+
+}
+
+.vagas h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+}
+
+.vagas .adicionar-vaga-btn {
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin: 10px,
+}
+
+.vaga-section .vaga-card .btn-detalhes {
+    background: #343233;
+    color: white;
+    border: none;
+    outline: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.vaga-section {
+    width: 100%;
+    padding: 5px 2vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.vaga-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.vagas .vaga-title {
+    font-size: 30px;
+    color: black;
+}
+
+.modal-vaga .btn-cancel {
+    color: #343233 !important;
+    background-color: white !important;
+    border: 1px solid #343233 !important;
+}
+
+.modal-vaga .btn-submit-vaga {
+    color: white !important;
+    background-color: #343233 !important;
+    border: none;
+}
+
+/*-----------------PAGINA DETALHES VAGA-----------------*/
+
+.vaga-individual {
+    display: grid;
+    grid-template-columns: 0.5fr, 1.5fr 1.0fr;
+    margin: 50px;
+    grid-gap: 60px;
+
+}
+
+.vaga-individual h1 {
+    grid-row: 1;
+    grid-column: span 3;
+    margin: 0;
+}
+
+.vaga-individual .descricao-vaga {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.vaga-individual .detalhes-vaga h3 {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.vaga-individual .requisitos {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.vaga-individual .requisitos h2,
+.vaga-individual .descricao-vaga h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.vaga-individual .requisitos ul,
+.vaga-individual .descricao-vaga h3 {
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.vaga-individual .container-detalhes {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.vaga-individual .container-detalhes h5 {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.vaga-individual .container-detalhes h6 {
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+
+.vaga-individual .container-candidatos {
+    grid-row: span 2;
+    grid-column: 3;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0px 4px 4px 2px #343233;
+    margin: 0;
+}
+
+
+
+.vaga-individual .container-candidatos .btn-candidatos {
+    color: white !important;
+    background-color: #343233 !important;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+/*-----------------PAGINA MINHAS CANDIDATURAS-----------------*/
+
+.candidaturas {
+    margin: 50px;
+}
+
+.candidaturas h1 {
+    font-size: 35px;
+}
+
+.modal-candidatura .modal-conteudo {
+    display: grid;
+    grid-template-columns: 1.0fr 1.0fr;
+    column-gap: 50px;
+}
+
+.modal-candidatura .dados-candidatura {
+    grid-column: 1;
+}
+
+.modal-candidatura .status-candidatura {
+    grid-column: 2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.modal-candidatura .btn-ok {
+    color: white !important;
+    background-color: #343233 !important;
+    border: none;
+}
+
+/*------------------PÁGINA CANDIDATURAS VAGA X------*/
+.candidaturas-vaga {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 0.6fr 0.8fr;
+    column-gap: 150px;
+}
+
+.candidaturas-vaga h1 {
+    font-size: 40px;
+    grid-column: span 2;
+}
+
+.candidaturas-vaga .info_vaga {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.candidaturas-vaga .info-vaga h2,
+.candidaturas-vaga .requisitos h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.candidaturas-vaga .info-vaga h3,
+.candidaturas-vaga .requisitos ul {
+    font-size: 15px;
+    margin-left: 30px;
+}
+.candidaturas-vaga .requisitos {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.candidaturas-vaga .tabela-candidaturas {
+    grid-column: 2;
+    grid-row: span 2;
+    margin: 20px;
+}
+
+.modal-candidatura .btn-cancel {
+    color: #343233 !important;
+    background-color: white !important;
+    border: 1px solid #343233 !important;
+}
+
+.modal-candidatura .btn-atribuir-vaga {
+    color: white !important;
+    background-color: #343233 !important;
+    border: none;
+}

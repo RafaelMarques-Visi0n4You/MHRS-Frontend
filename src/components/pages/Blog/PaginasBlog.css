@@ -1,0 +1,397 @@
+/*-----------------PAGINA PRINCIPAL DO BLOG-----------------*/
+.header {
+    width: 100%;
+    height: calc(100vh - 200px);
+    background: url(../../../img/blog-image.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.heading {
+    color: black;
+    font-size: 150px;
+    line-height: 100px;
+    margin-bottom: 80px;
+}
+
+.heading .small {
+    display: block;
+    font-size: 60px;
+}
+
+.heading .no-fill {
+    font-style: italic;
+    -webkit-text-stroke: 2px black;
+}
+
+.blog-section .blog-card .btn-detalhes {
+    background: #343233;
+    color: white;
+    border: none;
+    outline: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.blog-section {
+    width: 100%;
+    padding: 50px 5vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.blog-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-overview {
+    margin: 10px 0 20px;
+    line-height: 30px;
+}
+
+
+
+/*-----------------PAGINA SUGERIR PUBLICAÇÃO-----------------*/
+
+.banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-upload-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #343233;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.banner-upload-btn MdOutlineFileUpload {
+    width: 20px;
+}
+
+.blog {
+    width: 70vw;
+    min-width: 400px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 50px 0;
+}
+
+textarea::-webkit-scrollbar,
+input::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+textarea::-webkit-scrollbar-thumb,
+input::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.title-blog,
+.description-blog,
+.date-noticia-blog,
+.date-visita-blog,
+.local-visita-blog,
+.motivo-visita-blog,
+.duracao-visita-blog,
+.date-noticia-blog,
+.date-visita-blog {
+    width: 100%;
+    min-height: 20px;
+    height: auto;
+    outline: rgba(0, 0, 0, 0.1);
+    font-size: 50px;
+    font-weight: 600;
+    color: black;
+    resize: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.title-blog::placeholder,
+.description-blog::placeholder,
+.local-visita-blog::placeholder,
+.motivo-visita-blog::placeholder,
+.duracao-visita-blog::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.description-blog {
+    height: 500px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 100px;
+    white-space: pre-wrap;
+}
+
+.local-visita-blog,
+.motivo-visita-blog,
+.duracao-visita-blog,
+.date-visita-blog,
+.date-noticia-blog {
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    white-space: pre-wrap;
+}
+
+.blog .btn-submit-noticia {
+    border: none;
+    outline: none;
+    background-color: #343233;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog .btn-submit-noticia:hover {
+    border: 1px solid #343233 !important;
+    background-color: white !important;
+    color: #343233 !important;
+}
+
+/*-----------------PAGINA DETALHES PUBLICAÇÃO-----------------*/
+.blog-individual {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 20px;
+
+}
+
+.blog-individual h1 {
+    grid-column: span 2;
+    font-size: 60px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.blog-individual div {
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.blog-individual p {
+    grid-column: 2;
+    margin-right: 20px;
+    font-size: 20px;
+    grid-row: 2;
+
+}
+
+.blog-individual .descricao::first-letter {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+section .mais-recentes {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 200px;
+    font-size: 40px;
+
+}
+
+/*-----------------PAGINA DETALHES PUBLICAÇÃO ADMIN-----------------*/
+
+.blog .btn-submit-aprovar {
+    border: none;
+    outline: none;
+    background-color: #6b885d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog .btn-submit-rejeitar {
+    border: none;
+    outline: none;
+    background-color: #ad3434;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog .btn-submit-rejeitar:hover {
+    border: 1px solid #ad3434 !important;
+    background-color: white !important;
+    color: #ad3434 !important;
+}
+
+.blog .btn-submit-aprovar:hover {
+    border: 1px solid #6b885d !important;
+    background-color: white !important;
+    color: #6b885d !important;
+}
+
+.blog .btn-submit-editar {
+    border: 1px solid #343233 !important;
+    background-color: white !important;
+    color: #343233 !important;
+    margin: 20px;
+
+}
+
+.blog .btn-submit-editar {
+    border: 1px solid #343233 !important;
+    background-color: #343233 !important;
+    color: white !important;
+    margin: 20px;
+}
+/*-----------------PAGINA VALIDAR PUBLICAÇÃO-----------------*/
+
+/*-----------------PAGINA MINHAS PUBLICAÇÕES-----------------*/
+.visita-modal .btn-cancel,
+.publicacao-modal .btn-cancel {
+    background-color: white;
+    border: 1px solid #343233 !important;
+    color: #343233 !important;
+    margin-right: 10px;
+}
+
+.visita-modal .btn-submit,
+.publicacao-modal .btn-ok,
+.publicacao-modal .btn-reenviar-publicacao,
+.publicacao-modal .btn-editar-publicacao,
+.publicacao-modal .btn-editar-publicacao {
+    background-color: #343233 !important;
+    color: white !important;
+    border: none;
+    margin-right:10px
+}
+
+.publicacao-modal .btn-publicar{
+    background-color: white !important;
+    color: #6b885d !important;
+    border: 1px solid #6b885d !important;
+    margin-right:10px;
+}
+
+.publicacao-modal .btn-nao-publicar{
+    background-color: white !important;
+    color: #ad3434 !important;
+    margin-right:10px;
+    border: 1px solid #ad3434 !important;   
+}
+
+.publicacao-modal .btn-cancel:last-child,
+.publicacao-modal .btn-ok:last-child {
+    margin-right: 0;
+}
+
+
+
+.publicacoes .btn-publicacao {
+    margin: 0 10px;
+    background-color: #343233 !important;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: #343233 !important;
+}
+
+.publicacoes .btn-publicacao:hover {
+    background-color: #343233 !important;
+    color: white !important;
+    border: none !important;
+}
+.publicacoes {
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.publicacoes h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: black;
+}
+
+.tabela-minhas-publicacoes {
+    margin: 50px;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+}
+
+#btn-nao-publicar,
+#btn-editar,
+#btn-eliminar {
+    display: inline-block;
+}
+
+
+#btn-eliminar {
+    background-color: #ad3434 !important;
+    border: 1px solid #ad3434 !important;
+    color: white;
+}
+
+#btn-editar {
+    background-color: #6b885d !important;
+    border: 1px solid #6b885d !important;
+    color: white;
+}
+
+#btn-nao-publicar {
+    background-color: white !important;
+    border: 1px solid #6b885d !important;
+    color: #6b885d;
+}
