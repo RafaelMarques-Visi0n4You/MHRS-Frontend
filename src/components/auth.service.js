@@ -3,7 +3,7 @@ import axios from "axios";
 class AuthService {
     login(nome_utilizador, pass) {
         return axios
-            .post("http://localhost:8080/user/login", { nome_utilizador, pass })
+            .post("https://mhrs-frontend.onrender.com/user/login", { nome_utilizador, pass })
             .then(res => {
                 if (res.data.token) {
                     localStorage.setItem("user", JSON.stringify(res.data));
@@ -13,7 +13,7 @@ class AuthService {
     }
     loginVisitante(email, pass){
         return axios
-            .post("http://localhost:8080/user/loginUserVisitante", { email, pass })
+            .post("https://mhrs-frontend.onrender.com/user/loginUserVisitante", { email, pass })
             .then(res => {
                 if (res.data.token) {
                     localStorage.setItem("user", JSON.stringify(res.data));

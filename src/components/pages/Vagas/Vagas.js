@@ -31,7 +31,7 @@ export default function Vagas() {
 
     const loadVagasEmAberto = async () => {
         try {
-            const response = await axios.get(`http://localhost:8080/vaga/listEmAberto`);
+            const response = await axios.get(`https://mhrs-frontend.onrender.com/vaga/listEmAberto`);
             if (response.data.success) {
                 setVagas(response.data.data);
             } else {
@@ -46,7 +46,7 @@ export default function Vagas() {
     //SUBMETER VAGA
     const handleSubmitVaga = async () => {
         try {
-            const response = await axios.post(`http://localhost:8080/vaga/create`,
+            const response = await axios.post(`https://mhrs-frontend.onrender.com/vaga/create`,
                 {
                     titulo_vaga: titulo,
                     descricao: descricao,
@@ -106,7 +106,7 @@ export default function Vagas() {
                                     <div key={index} className="vaga-card">
                                         <img
                                             className="vaga-image"
-                                            src={`http://localhost:8080/${vaga.imagem}`}
+                                            src={`https://mhrs-frontend.onrender.com/${vaga.imagem}`}
                                             alt={vaga.titulo_vaga || "Visita"}
                                         />
                                         <h1 className="vaga-title">{vaga.titulo_vaga || "Visita"}</h1>

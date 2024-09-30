@@ -6,7 +6,7 @@ import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const baseUrl = "http://localhost:8080";
+const baseUrl = "https://mhrs-frontend.onrender.com";
 const URLRegisto = baseUrl + '/user/registo';
 
 const userValidacao = /^[a-zA-Z]+[a-zA-Z0-9-_]{3,23}$/;
