@@ -29,7 +29,7 @@ import MinhasCandidaturas from './components/pages/Vagas/minhasCandidaturas';
 import ProgramaIdeias from './components/pages/Projetos/ProgramaIdeias';
 import AuthService from './components/auth.service';
 import { useEffect, useState } from 'react';
-import DetalhesPublicacao from './components/pages/Blog/detalhesPublicacao';
+import DetalhesPublicacao from './components/pages/Blog/DetalhesPublicacao';
 import ArquivoVagas from './components/pages/Vagas/ArquivoVagas';
 
 
